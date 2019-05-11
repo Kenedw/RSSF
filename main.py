@@ -1,7 +1,5 @@
 import sys
 import json
-
-sys.path.insert(0, '../model')
 import carga
 
 
