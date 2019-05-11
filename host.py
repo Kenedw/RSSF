@@ -1,11 +1,11 @@
 
-import pacote.py
+import packet
 
 class host():
-	def __init__(self, ID, ID_host, pacote):
+	def __init__(self, ID, ID_host, packet):
 		self.ID = ID #ID do host
 		self.ID_host = ID_host
-		self.pacote = pacote.pacote()
+		self.packet = packet.packet()
 
 	#... 
 		
