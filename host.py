@@ -7,9 +7,7 @@ class host(redes):
 	def __init__(self, ID_router,ID, position,energy,reach):
 		super().__init__()
 		# super().__init__(link)
-
 		# self.packet = packet.packet()
-
 		self.ID = ID #ID do host
 		self.ID_router = ID_router
 		self.energy = energy
@@ -18,11 +16,9 @@ class host(redes):
 		self.reach = reach 
 
 
+
 	# def Hellou(self, topologia):
 	#  return self
-
-		self.coordinates = xy #tuple
-		self.alcance = alcance #gerar range aleatoriamente
 
 
 

@@ -13,8 +13,9 @@ class redes(enlace):
   def RouteResponse(self):
     pass
 
-  def Hellou(self,topologia):
-    pass
+  def __Hellou(self,topologia):
+    for i in topologia:
+      pass
 
 
 
