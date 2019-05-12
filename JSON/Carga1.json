@@ -20,42 +20,48 @@
                 {
                     "energy":10,
                     "id":"H2"
+                }
+            ]
+        },
+        {
+            "id":"R2",
+            "rate":2,
+            "hosts":[
+                {
+                    "energy":10,
+                    "id":"H1"
+                },
+                {
+                    "energy":10,
+                    "id":"H2"
+                }
+            ]
+        },
+        {
+            "id":"R3",
+            "rate":2,
+            "hosts":[
+                {
+                    "energy":10,
+                    "id":"H1"
+                },
+                {
+                    "energy":10,
+                    "id":"H2"
                 },
                 {
                     "energy":10,
                     "id":"H3"
-                },
+                }
+            ]
+        },
+        {
+            "rate":2,
+            "id":"R4",
+            "hosts":[
                 {
                     "energy":10,
-                    "id":"H4"
-                },
-                {
-                    "energy":10,
-                    "id":"H5"
-                },
-                {
-                    "energy":10,
-                    "id":"H6"
-                },
-                {
-                    "energy":10,
-                    "id":"H7"
-                },
-                {
-                    "energy":10,
-                    "id":"H8"
-                },
-                {
-                    "energy":10,
-                    "id":"H9"
-                },
-                {
-                    "energy":10,
-                    "id":"H10"
-                },
-                {
-                    "energy":10,
-                    "id":"H11"
+                    "id":"H1"
                 }
             ]
         }

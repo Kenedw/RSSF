@@ -3,11 +3,12 @@ import packet
 # Camada Fisica
 class fisica():
   '''
-  @param link tuple (origin,destino)
+  @param link list [origin,destino1,destino2,..,destinoN]
   @param ativo boolean (true|false)
   '''
-  def __init__(self,link):
-    self.__link = link #link é uma tupla com (origin,destino)
+  def __init__(self):
+    self.__link = [] 
+    # self.__link = link 
     self.__is_ativo = False
     self.__dado = packet
 

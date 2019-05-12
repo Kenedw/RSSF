@@ -1,8 +1,9 @@
 import fisica
 
 class enlace(fisica.fisica):
-  def __init__(self,link):
-    super.__init__(link)
+  def __init__(self):
+    super().__init__()
+    # super.__init__(link)
     # self.__busy = self._fisica__GetAtivo()
 
   def __GetDado(self):

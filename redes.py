@@ -1,13 +1,22 @@
 import enlace
 
 class redes(enlace.enlace):
-  def __init__(self,link):
-    super().__init__(link)
+  def __init__(self):
+    super().__init__()
+    # super().__init__(link)
     self.neighbors = []
     self.routeTable = []
 
-  def RouteRequest():
+  def RouteRequest(self,topologia):
     pass
 
-  def RouteResponse():
+  def RouteResponse(self):
     pass
+
+  def Hellou(self,topologia):
+    pass
+
+
+
+
+

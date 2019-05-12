@@ -1,11 +1,14 @@
 
-import packet
-import host
+# from packet import packet
+from host import host
 
 class router():
-	def __init__(self, host, table_router, ID, energia, N_mult_acess):
-		self.host = host.host()
-		self. table_router = []
-		self.ID = ID
-		self.energia = energia
-		self.N_mult_acess = N_mult_acess
+	# ID=0
+	def __init__(self, ID, sizeQueue):
+		self.__ID = ID
+		self.TableRouter = []
+		self.sizeQueue = sizeQueue
+		self.hostList = []
+
+	def insertHost(self,Host):
+		self.hostList.append(Host)
