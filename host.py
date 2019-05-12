@@ -10,11 +10,6 @@ class host(redes):
 
 		# self.packet = packet.packet()
 
-
-	def __init__(self, ID_router,ID, xy,link, alcance):
-		super().__init__(link)
-
-
 		self.ID = ID #ID do host
 		self.ID_router = ID_router
 		self.energy = energy
