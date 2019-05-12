@@ -4,5 +4,3 @@ class packet():
 		self.size = size
 		self.origem = origem
 		self.destino = destino
-
-		#...
