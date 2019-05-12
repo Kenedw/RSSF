@@ -22,10 +22,7 @@ def CreatNetwork(argv):
 #INICIO PLOT
   plt.axis([0, largura, 0, altura]) #dimensao x e y varia de 0 a 20	
   plt.xlabel("Metros")
-  plt.ylabel("Metros")
-  
-  print(HostsLocatios)
-  print(station)
+  plt.ylabel("Metros")  
 
   ID=1
   for aux in HostsLocatios:
@@ -33,16 +30,16 @@ def CreatNetwork(argv):
     plt.plot( x, y, 'ro') 					 #(x,y, circlered)
     plt.annotate(ID,(x,y))					 #nome aos pontos, coloca H na frente do ID
     ID +=1
-    area = math.pi * (10**2)				 #pegar o range de outra forma
-    plt.scatter(x, y, s=area*250, alpha=0.1) #opaco, desenha a area sobre o host
+    area = math.pi * (10**2)				 
+    plt.scatter(x, y, s=area*50, alpha=0.1)  #opaco, desenha a area sobre o host
+    
+  #for aux2 in routerList					 # pecorre o vetor com todos os nos, e liga as retas
+    #z,w = aux2[0], aux2[1]
 
-  #for aux2 in station:    	 # pecorre o vetor com todos os nos, e liga as retas
-   # z,w = aux2[0], aux2[1]
+    #dz = routerList[i+1]z - routerList[i].z
+    #dw = routerList[i+1]w - routerList[i].w
 
-    #dz = route[i+1].position[0] - route[i].position[0]
-    #dw = route[i+1].position[1] - route[i].position[1]
-
-   # plt.arrow(z, w,)
+    #plt.arrow(z, w, dz, dw)
 
   plt.show()
 #FIM PLOT
