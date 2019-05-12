@@ -1,5 +1,6 @@
 import random
 import math
+import json
 
 def gerate_xy(n_hosts,width,height):
   XY = []
@@ -14,3 +15,7 @@ def dist_euclidiana(posi):
   for i in range(dim):
     soma += math.pow(posi[0][i] - posi[1][0], 2)
   return int(math.sqrt(soma))
+
+def parseJson(link):
+  F = open("JSON/"+link,"r")
+  return json.loads(F.read())

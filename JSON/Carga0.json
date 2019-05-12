@@ -2,6 +2,7 @@
     "flows":[
         {
             "id":"F1",
+            "target":"R1",
             "source":"H1",
             "destination":"H2",
             "amount":20,

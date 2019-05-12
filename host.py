@@ -19,7 +19,7 @@ class host(redes):
 	def __eq__(self, other):
 		# print(other)
 		dist = utills.dist_euclidiana([self.coordinates,other])
-		return (dist<=self.reach)
+		return (dist<self.reach) #tirando junto a propria rede como vizinha dela mesma
 
 
 	def Hellou(self, topologia):
