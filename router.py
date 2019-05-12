@@ -12,3 +12,5 @@ class router():
 
 	def insertHost(self,Host):
 		self.hostList.append(Host)
+
+	

@@ -25,6 +25,8 @@ class host(redes):
 	def Hellou(self, topologia):
 		return self._redes__Hellou(self.coordinates,topologia)
 
+	#def vizinhos(self, redes.neighbors)
+
 
 
 
