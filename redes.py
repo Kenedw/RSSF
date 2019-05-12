@@ -9,9 +9,11 @@ class redes(enlace):
     self.__topologia = []
 
   def RouteRequest(self,topologia):
+    #Todo DSR or AODV
     pass
 
   def RouteResponse(self):
+    #Todo DSR or AODV
     pass
 
   def PrintNeighbors(self):
@@ -30,20 +32,17 @@ class redes(enlace):
           # print("[Redes] host {} é vizinho de {}".format(position,i.ID))
           # utills.Log("host {} é vizinho de {}".format(position,i.coordinates))
 
-  def __send(self,destination,dado):
-    sending = False #verifica se já foi enviado
+  def __send(self,dado):
     for i in self.__neighbors: #verifica se é vizinho
-      if(i.ID == destination):
+      if(i.ID == dado.destination):#verifica cada vizinho
         if(self._enlace__GetBusy()):#se o enlace estiver ocupado, 
           print("[Redes] Canal ocupado, esperando liberação")
           while(not self._enlace__GetBusy):#espera desocupar
             pass
         if(not self._enlace__GetBusy()):#se o enlace não estiver ocupado
           self._enlace__SendDado(i,dado) #envia referencia do host e o dado
-          sending = True #marca como enviado
           break
-    if(not sending):
-      pass
+
 
 
 

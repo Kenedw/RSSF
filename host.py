@@ -34,12 +34,12 @@ class host(redes):
 			self.PrintNeighbors()
 			self.__energy -= 1
 			if(self.ID==destination): #verifica se o dado é para min
-				print("[Host] Dado recebido")
+				print("[Host] Dado recebido com id {}".format(dado.ID))
 				self._enlace__SetDado(dado)
 				print("--------FIM-------------")
 			else: #se não, tenta fazer o envio
 				print("[Host] Enviando para {}\n---------------".format(destination))
-				self._redes__send(destination,dado)
+				self._redes__send(dado)
 
 	def CheckEnergy(self):#retorna True se carregado
 		if (self.__energy<=0):

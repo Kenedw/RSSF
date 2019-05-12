@@ -10,6 +10,6 @@ if __name__ == "__main__":
   run.analise(routers,sys.argv[1]) 
 
 
-  plot.map(router.hostlist, routers ,10 ,10 )
+  # plot.map(router.hostlist, routers ,10 ,10 )
 
  
