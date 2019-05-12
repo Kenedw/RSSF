@@ -7,3 +7,5 @@ def gerate_xy(n_hosts,width,height):
     y = random.randint(0,height-1)
     XY.append((x,y))
   return XY
+
+  
