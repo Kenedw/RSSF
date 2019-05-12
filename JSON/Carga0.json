@@ -4,7 +4,7 @@
             "id":"F1",
             "target":"R1",
             "source":"H1",
-            "destination":"H2",
+            "destination":"H3",
             "amount":20,
             "start":0.5
         }

@@ -3,7 +3,7 @@ from packet import packet
 # Camada Fisica
 class fisica():
   '''
-  @param link list [origin,destino1,destino2,..,destinoN]
+  @param link list(hosts)
   @param ativo boolean (true|false)
   '''
   def __init__(self):
@@ -23,3 +23,6 @@ class fisica():
 
   def __GetDado(self):
     return self.__dado
+
+  def __SendDado(self,hostDest):
+    hostDest.send(hostDest.ID,self.__GetDado())

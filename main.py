@@ -1,7 +1,7 @@
 import sys
 import json
 import carga
-import plot
+# import plot
 import run
 import router
 
