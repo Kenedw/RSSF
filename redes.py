@@ -1,6 +1,6 @@
-import enlace
+from enlace import enlace
 
-class redes(enlace.enlace):
+class redes(enlace):
   def __init__(self):
     super().__init__()
     # super().__init__(link)

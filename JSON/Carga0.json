@@ -14,46 +14,57 @@
             "rate":3,
             "hosts":[
                 {
+                    "range":10,
                     "energy":10,
                     "id":"H1"
                 },
                 {
+                    "range":10,
                     "energy":10,
                     "id":"H2"
                 },
                 {
+                    "range":10,
                     "energy":10,
                     "id":"H3"
                 },
                 {
+                    "range":10,
                     "energy":10,
                     "id":"H4"
                 },
                 {
+                    "range":10,
                     "energy":10,
                     "id":"H5"
                 },
                 {
+                    "range":10,
                     "energy":10,
                     "id":"H6"
                 },
                 {
+                    "range":10,
                     "energy":10,
                     "id":"H7"
                 },
                 {
+                    "range":10,
                     "energy":10,
                     "id":"H8"
                 },
                 {
+                    "range":10,
                     "energy":10,
                     "id":"H9"
                 },
                 {
+                    "range":10,
                     "energy":10,
                     "id":"H10"
                 },
                 {
+                    "range":10,
                     "energy":10,
                     "id":"H11"
                 }

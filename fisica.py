@@ -1,4 +1,4 @@
-import packet
+from packet import packet
 
 # Camada Fisica
 class fisica():

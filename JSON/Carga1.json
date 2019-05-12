@@ -15,10 +15,12 @@
             "hosts":[
                 {
                     "energy":10,
+                    "range":10,
                     "id":"H1"
                 },
                 {
                     "energy":10,
+                    "range":10,
                     "id":"H2"
                 }
             ]
@@ -29,10 +31,12 @@
             "hosts":[
                 {
                     "energy":10,
+                    "range":10,
                     "id":"H1"
                 },
                 {
                     "energy":10,
+                    "range":10,
                     "id":"H2"
                 }
             ]
@@ -43,14 +47,17 @@
             "hosts":[
                 {
                     "energy":10,
+                    "range":10,
                     "id":"H1"
                 },
                 {
                     "energy":10,
+                    "range":10,
                     "id":"H2"
                 },
                 {
                     "energy":10,
+                    "range":10,
                     "id":"H3"
                 }
             ]
@@ -61,6 +68,7 @@
             "hosts":[
                 {
                     "energy":10,
+                    "range":10,
                     "id":"H1"
                 }
             ]
