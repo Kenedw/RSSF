@@ -13,9 +13,10 @@ class redes(enlace):
   def RouteResponse(self):
     pass
 
-  def __Hellou(self,topologia):
+  def __Hellou(self,position,topologia):
     for i in topologia:
-      pass
+      if(position == i):
+        self.neighbors.append(i)
 
 
 

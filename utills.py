@@ -1,4 +1,5 @@
 import random
+import math
 
 def gerate_xy(n_hosts,width,height):
   XY = []
@@ -8,4 +9,8 @@ def gerate_xy(n_hosts,width,height):
     XY.append((x,y))
   return XY
 
-  
+def dist_euclidiana(posi):
+  dim, soma = len(posi), 0
+  for i in range(dim):
+    soma += math.pow(posi[0][i] - posi[1][0], 2)
+  return int(math.sqrt(soma))

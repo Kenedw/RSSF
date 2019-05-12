@@ -1,4 +1,4 @@
-
+import utills
 # import packet
 from redes import redes
 class host(redes):
@@ -16,9 +16,14 @@ class host(redes):
 		self.reach = reach 
 
 
+	def __eq__(self, other):
+		# print(other)
+		dist = utills.dist_euclidiana([self.coordinates,other])
+		return (dist<=self.reach)
 
-	# def Hellou(self, topologia):
-	#  return self
+
+	def Hellou(self, topologia):
+		return self._redes__Hellou(self.coordinates,topologia)
 
 
 
