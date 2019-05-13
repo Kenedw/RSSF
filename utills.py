@@ -12,10 +12,9 @@ def gerate_xy(n_hosts,width,height):
   return XY
 
 def dist_euclidiana(posi):
-  dim, soma = len(posi), 0
-  for i in range(dim):
-    soma += math.pow(posi[0][i] - posi[1][0], 2)
-  return abs(int(math.sqrt(soma)))
+  soma = math.pow(posi[0][0] - posi[1][0], 2)
+  soma += math.pow(posi[0][1] - posi[1][1], 2)
+  return int(math.sqrt(soma))
 
 def parseJson(link):
   F = open("JSON/"+link,"r")
@@ -26,9 +25,10 @@ def plotTopologia(topologia):
   plt.ylabel("Metros")  
   for j in topologia:
     for i in j.hostList:
+      # print(f"{i.ID} na coordenada:{i.coordinates}")
       x,y = i.coordinates
-      plt.plot( x, y, 'ro')            #(x,y, circlered)
+      plt.plot( x, y, 'bo')            #(x,y, circlered)
       plt.annotate(i.ID,(x,y))         
       area = math.pi * (i.reach*i.reach)    
-      plt.scatter(x, y, s=area*50, alpha=0.1)  #opaco, desenha a area sobre o host
-    plt.show()
+      plt.scatter(x, y, s=area*i.reach*math.pi, alpha=0.1)  #opaco, desenha a area sobre o host
+    plt.show(block=False)

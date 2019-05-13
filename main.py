@@ -11,4 +11,5 @@ from host import host
 if __name__ == "__main__":
   routers = carga.CreatNetwork(sys.argv[1]) #carrega os dados da rede
   utills.plotTopologia(routers)
-  run.analise(routers,sys.argv[1])   
+  run.analise(routers,sys.argv[1])
+  input()

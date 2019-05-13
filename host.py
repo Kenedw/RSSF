@@ -17,11 +17,10 @@ class host(redes):
 
 
 	def __eq__(self, other):
-		if not (other == self.coordinates):
-			dist = utills.dist_euclidiana([self.coordinates,other])
-			return (dist<=self.reach) #tirando junto a propria rede como vizinha dela mesma
-		else:
+		if	(other == self.coordinates):
 			return False
+		dist = utills.dist_euclidiana([self.coordinates,other])
+		return (dist<self.reach) #tirando junto a propria rede como vizinha dela mesma
 
 	def Hellou(self, topologia):
 		self._redes__Hellou(self.coordinates,topologia)

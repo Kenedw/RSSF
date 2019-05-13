@@ -22,15 +22,13 @@ class redes(enlace):
       print(i.ID+":", end="")
     print("}")
 
-  def __Hellou(self,position,topologia):
+  def __Hellou(self,myposition,topologia):
     self.__topologia = topologia #guarda a topologia da rede para não precisar reenviar
     self.__neighbors = []
     for i in topologia: #i é um host
       if(i.CheckEnergy()):
-        if(position == i):
+        if(myposition == i):
           self.__neighbors.append(i)
-          # print("[Redes] host {} é vizinho de {}".format(position,i.ID))
-          # utills.Log("host {} é vizinho de {}".format(position,i.coordinates))
 
   def __send(self,dado):
     for i in self.__neighbors: #verifica se é vizinho

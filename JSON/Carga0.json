@@ -17,7 +17,7 @@
             "rate":3,
             "hosts":[
                 {
-                    "range":10,
+                    "range":15,
                     "energy":10,
                     "id":"H1"
                 },
@@ -32,7 +32,7 @@
                     "id":"H3"
                 },
                 {
-                    "range":10,
+                    "range":5,
                     "energy":10,
                     "id":"H4"
                 },
